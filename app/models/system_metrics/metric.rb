@@ -1,7 +1,7 @@
 module SystemMetrics
   class Metric < ActiveRecord::Base
 
-    set_table_name 'system_metrics'
+    self.table_name = 'system_metrics'
     has_many :children, :class_name => self.name, :foreign_key => :parent_id
     belongs_to :parent, :class_name => self.name
     serialize :payload
