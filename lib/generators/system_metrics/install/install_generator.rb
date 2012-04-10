@@ -9,11 +9,11 @@ module SystemMetrics
       source_root File.expand_path("../../../../../public", __FILE__)
 
       def copy_css_files
-        directory "stylesheets", "public/stylesheets/system_metrics", :recursive => true
+        directory "stylesheets", "app/assets/stylesheets/system_metrics", :recursive => true
       end
 
       def copy_image_files
-        directory "images", "public/images/system_metrics", :recursive => true
+        directory "images", "app/assets/images/system_metrics", :recursive => true
       end
 
     end
